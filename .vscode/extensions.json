@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "redhat.vscode-yaml",
+    "editorconfig.editorconfig",
+    "visualstudioexptteam.vscodeintellicode",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "foxundermoon.shell-format",
+    "timonwong.shellcheck"
+  ]
+}

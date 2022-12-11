@@ -1,0 +1,4 @@
+**/migrations/*
+*_pb2*
+.git
+*.html

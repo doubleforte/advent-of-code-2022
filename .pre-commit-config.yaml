@@ -1,0 +1,30 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: Make sure files only end in a newline
+        exclude_types: [svg]
+      - id: double-quote-string-fixer
+        name: Use single quotes
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: Sort imports alphabetically, separated into sections by type
+        args: [--filter-files]
+  - repo: https://github.com/pre-commit/mirrors-yapf
+    rev: v0.32.0
+    hooks:
+      - id: yapf
+        name: Optimize formatting based on PEP8 style guide (via yapf)
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 5.0.4
+    hooks:
+      - id: flake8
+        name: Check PEP8 compliance (via flake8)
+exclude: \/migrations\/|_pb2
