@@ -12,7 +12,7 @@ repos:
       - id: double-quote-string-fixer
         name: Use single quotes
   - repo: https://github.com/timothycrosley/isort
-    rev: 5.10.1
+    rev: 5.11.1
     hooks:
       - id: isort
         name: Sort imports alphabetically, separated into sections by type
@@ -22,9 +22,8 @@ repos:
     hooks:
       - id: yapf
         name: Optimize formatting based on PEP8 style guide (via yapf)
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 5.0.4
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
     hooks:
       - id: flake8
         name: Check PEP8 compliance (via flake8)
-exclude: \/migrations\/|_pb2
